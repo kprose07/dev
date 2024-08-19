@@ -206,6 +206,12 @@
    .s_section_one{
     margin-top: 10%;
    }
+   .card_ser{
+    width: 250px;
+   }
+   .gallery{
+    padding-bottom: 50px;
+   }
   }
   @media screen and (max-width: 500px) {
     .s_section_one{
