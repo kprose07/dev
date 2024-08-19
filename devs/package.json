@@ -2,7 +2,7 @@
   "name": "devs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kprose07.github.io/dev",
+  "homepage": "https://khaysdev.netlify.app/devs",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
