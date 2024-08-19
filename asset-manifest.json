@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/dev/static/css/main.fc8e3b04.css",
+    "main.js": "/dev/static/js/main.a021dded.js",
+    "static/media/sectionbg.png": "/dev/static/media/sectionbg.be47f0c973a7dc0aafc1.png",
+    "static/media/turner.png": "/dev/static/media/turner.457fb61a8a30a017f99c.png",
+    "static/media/mock.png": "/dev/static/media/mock.8bb0581da090500e8c21.png",
+    "static/media/soarp.png": "/dev/static/media/soarp.3fc09943d22a8354775a.png",
+    "static/media/me.png": "/dev/static/media/me.d4bed1ebce3278e25105.png",
+    "static/media/mockt.png": "/dev/static/media/mockt.2387171e7a1523949e1e.png",
+    "static/media/mockk.png": "/dev/static/media/mockk.f914eb20d22f9ce25a40.png",
+    "static/media/imfundo.png": "/dev/static/media/imfundo.0e9b760d34a5fd4737a0.png",
+    "static/media/lily.png": "/dev/static/media/lily.93ef0edfd4538d5209c1.png",
+    "static/media/kd.png": "/dev/static/media/kd.d259380be61e8346dbc2.png",
+    "static/media/slick.svg": "/dev/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/dev/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/dev/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/dev/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/dev/index.html",
+    "main.fc8e3b04.css.map": "/dev/static/css/main.fc8e3b04.css.map",
+    "main.a021dded.js.map": "/dev/static/js/main.a021dded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc8e3b04.css",
+    "static/js/main.a021dded.js"
+  ]
+}
