@@ -1,0 +1,54 @@
+/* Ensure the container occupies the full width of the screen */
+.container {
+  margin: 0 !important;
+  padding: 0;
+  width: 100%; /* Ensure container takes full width */
+}
+
+/* Navbar adjustments */
+.navbar {
+  padding: 10px;
+  background-color: transparent; /* Ensure background is transparent */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position it at the top of the page */
+  left: 0; /* Align it to the left edge */
+  right: 0; /* Stretch it to the right edge */
+  box-shadow: none; /* Remove any box-shadow if applied */
+  border: none; /* Remove border if any */
+  z-index: 1000; /* Ensure it sits above other elements */
+}
+
+/* Positioning the toggle button to the right */
+.navbar-toggler {
+  position: absolute;
+  right: 10px; /* Add some spacing from the right edge */
+  top: 50%;
+  transform: translateY(-50%); /* Center the toggle button vertically */
+}
+
+/* Ensure the navbar brand and links adjust accordingly */
+.navbar-brand {
+  margin: 0;
+}
+
+.navbar-collapse {
+  margin: auto; /* Align collapse menu to the left of the toggle button */
+}
+
+.navLink {
+  color: var(--wg) !important;
+  font-family: "Klee One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  width:100px;
+}
+
+.navLink:hover {
+  background-color: var(--wg);
+  color: var(--green) !important;
+}
+
+#navlogo {
+  width: 60px;
+}

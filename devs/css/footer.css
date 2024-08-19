@@ -1,0 +1,28 @@
+/* CSS for the footer component */
+
+footer {
+    position: fixed;
+    bottom: -100px; /* Initially hidden below the viewport */
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 0;
+    background-color: var(--lgreen); /* Ensure --lgreen is defined in your CSS variables */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  footer.visible {
+    bottom: 0; /* Move footer into view */
+    opacity: 1;
+  }
+  
+  footer img {
+    width: 5%;
+    height: 70%;
+  }
+  

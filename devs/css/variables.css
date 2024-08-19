@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Molengo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --wg:#EEE4E4;
+    --green:#6A6649;
+    --blue:#87ABAC;
+    --lightb:#E3E3E3;
+    --brown:#9C9696;
+    --lgreen:#E3E3E3;
+    --lbrown:#D7CDCD;
+    --steps: 14; 
+}
+/* body{
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+} */
+body {
+    font-family: "Molengo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

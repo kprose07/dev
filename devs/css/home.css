@@ -1,0 +1,326 @@
+.home_contain {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    -webkit-user-select: none;
+overflow-x: hidden;
+}
+
+/* Section One */
+.section_one {
+    width: 100%;
+    height: 760px;
+    background-image: url(../imgs/sectionbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #so_text {
+    color: var(--wg);
+    font-size: 64px;
+    text-align: center;
+    width: max-content;
+    opacity: 0; /* Start hidden */
+    animation: fadeInSlideUp 4s ease-out forwards; /* Apply new animation */
+  }
+
+/* CSS for typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+.typing-effect {
+    overflow-x: hidden !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    /* Adjust to match your design */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--wg);
+    }
+}
+
+/* CSS for fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Section Two */
+.section_two {
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    align-items: center;
+    padding: 55px;
+    /* background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1447713060098-74c4ed0be5e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHdoaXRlJTIwcm9zZXN8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.stco {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: max-content;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.so_HeadText {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.so_SubText {
+    font-size: 24px;
+    color: var(--blue);
+    margin-top: -5px;
+    font-style: italic;
+}
+
+.so_Detail {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#resume {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    outline: 0;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  #resume:hover {
+    background-color:white;
+    border: 3px solid var(--blue);
+    color: var(--blue);
+  }
+
+.stct {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    width: max-content;
+    height: 400px;
+}
+
+.profImage {
+    width: 300px;
+    height: 100%;
+    filter: drop-shadow(0 0 0.4rem black);
+
+}
+
+.profImage image {
+    width: 100%;
+    height: 100%;
+}
+
+/* section Three */
+.section_three {
+    width: 100%;
+    height: max-content;
+    background-color: var(--lightb);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 10px;
+
+    z-index: 20;
+}
+
+.cards {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 50px;
+}
+
+.Head {
+    margin-top: 2%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--wg);
+}
+
+.section_four {
+    width: 100%;
+    height: max-content;
+    background-color: var(--brown);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.section_five {
+    width: 100%;
+    height: 600px;
+    background-image: url(../imgs/sectionbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.73);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#proj {
+    color: var(--wg);
+    margin-bottom: 50px;
+}
+
+.p_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
+    max-width: 100%; /* Ensure the container width is 100% of its parent */
+    width: max-content; /* Make sure the width is determined by its content */
+    height: auto; /* Allow height to be determined by content */
+    align-content: center;
+    justify-content: flex-start; /* Align content to the start */
+    padding: 30px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+  }
+/* Custom scrollbar for WebKit browsers */
+.p_cards::-webkit-scrollbar {
+    height: 15px; /* Adjust the height of the horizontal scrollbar */
+  }
+  
+  .p_cards::-webkit-scrollbar-thumb {
+    background-color: var(--lgreen); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round the scrollbar thumb */
+  }
+  
+  .p_cards::-webkit-scrollbar-track {
+    background-color: transparent; /* Background of the scrollbar track */
+  }  
+
+.cardp {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.cardp a {
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--wg) !important;
+    width: 100%;
+    padding: 10px;
+    font-style: italic;
+    text-decoration: underline !important;
+    /* font-weight: 700; */
+    text-align: center;
+}
+
+.pcardo {
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    background-image: url("../imgs/turner.png");
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
+    border-radius: 20px;
+}
+
+.pcardt {
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    background-image: url("../imgs/soarp.png");
+    background-size: cover;
+    background-position: center;
+
+    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
+    border-radius: 20px;
+}
+
+.pcardth {
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    background-position: center;
+
+    background-image: url("../imgs/lily.png");
+    background-size: cover;
+    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
+    border-radius: 20px;
+}
+
+.pcardf {
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    background-position: center;
+
+    background-image: url("../imgs/imfundo.png");
+    background-size: cover;
+    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
+    border-radius: 20px;
+}
