@@ -44,7 +44,7 @@ function Home() {
             <p className="so_SubText">Fullstack Developer</p>
             <p className="so_Detail">
               Greetings! I'm Khaylah Rose, an aspiring computer engineer
-              currently in my junior year, Class of 2025. With a passion for
+              currently in my senior year, Class of 2025. With a passion for
               both front-end and back-end development, I strive to create
               seamless and impactful user experiences. My goal is to leverage my
               skills in computer engineering to drive positive change within our
