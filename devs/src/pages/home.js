@@ -82,6 +82,13 @@ function Home() {
               </a>
             </div>
             <div className="cardp">
+              <div className="pcardoo"></div>
+
+              <a href="https://jsuinnovation.netlify.app/">
+                Innovation Site
+              </a>
+            </div>
+            <div className="cardp">
               <div className="pcardt"></div>
               <a href="https://github.com/AATechCulture/TiCode">
                 BE SMART Hackathon
@@ -101,6 +108,7 @@ function Home() {
                 USAID Case study
               </a>
             </div>
+
           </div>
         </div>
       </div>
