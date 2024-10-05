@@ -7,14 +7,17 @@ import Skills from "../components/skills";
 
 function Home() {
   const sectionTwoRef = useRef(null);
-  const introducingTextRef = useRef(null);
+  const sectionThreeRef = useRef(null); // For About section
   const pCardsRef = useRef(null);
+  const introducingTextRef = useRef(null);
 
+  // Handle the introduction animation and scroll to the About section
   useEffect(() => {
     const handleAnimationEnd = () => {
-      if (sectionTwoRef.current) {
+      if (sectionThreeRef.current) {
         sectionTwoRef.current.classList.add("visible");
         sectionTwoRef.current.scrollIntoView({ behavior: "smooth" });
+        // sectionThreeRef.current.scrollIntoView({ behavior: "smooth" });
       }
     };
 
@@ -30,43 +33,63 @@ function Home() {
     };
   }, []);
 
+  // Infinite scroll for section 5 (Top Projects) only when in view
   useEffect(() => {
     const pCards = pCardsRef.current;
 
-    // Duplicate child elements to create the illusion of infinite scrolling
     const cloneCards = () => {
       const clonedCards = pCards.innerHTML;
       pCards.innerHTML += clonedCards;
     };
 
-    cloneCards(); // Clone the cards when component mounts
+    cloneCards();
 
     const scroll = () => {
       if (pCards) {
-        pCards.scrollLeft += 1; // Scroll to the left
-
-        // Check if the scroll has reached the middle point (after the original cards)
+        pCards.scrollLeft += 1;
         if (pCards.scrollLeft >= pCards.scrollWidth / 2) {
-          pCards.scrollLeft = 0; // Reset scroll to the start of the original cards
+          pCards.scrollLeft = 0;
         }
       }
     };
 
-    // Set interval to scroll every 20ms
-    const intervalId = setInterval(scroll, 10);
+    let intervalId;
 
-    // Cleanup on component unmount
-    return () => clearInterval(intervalId);
+    // Use IntersectionObserver to trigger scroll only when section 5 is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            intervalId = setInterval(scroll, 20); // Start scrolling when visible
+          } else {
+            clearInterval(intervalId); // Stop scrolling when out of view
+          }
+        });
+      },
+      { threshold: 0.8 } // Trigger when 50% of the section is in view
+    );
+
+    if (pCards) {
+      observer.observe(pCards);
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <>
       <div className="home_contain">
+        {/* Section One: Introducing Text */}
         <div className="section_one">
           <p id="so_text" ref={introducingTextRef}>
             Introducing...
           </p>
         </div>
+
+        {/* Section Two: Introductory Content */}
         <div className="section_two fade-in" ref={sectionTwoRef}>
           <div className="stco">
             <p className="so_HeadText">Khaylah Rose</p>
@@ -89,16 +112,22 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="section_three">
+
+        {/* Section Three: About */}
+        <div className="section_three" ref={sectionThreeRef}>
           <p className="Head">About</p>
           <div className="cards">
             <Cards />
           </div>
         </div>
+
+        {/* Section Four: Skills */}
         <div className="section_four">
           <p className="Head">Skills</p>
           <Skills />
         </div>
+
+        {/* Section Five: Top Projects */}
         <div className="section_five">
           <p id="proj" className="Head">
             Top Projects
