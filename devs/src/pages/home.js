@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../css/home.css";
 import "../css/variables.css";
-// import soBG from "../imgs/sectionbg.png";
 import Me from "../imgs/me.png";
 import Cards from "../components/AboutCards";
 import Skills from "../components/skills";
@@ -9,6 +8,8 @@ import Skills from "../components/skills";
 function Home() {
   const sectionTwoRef = useRef(null);
   const introducingTextRef = useRef(null);
+  const pCardsRef = useRef(null);
+  const [scrollDirection, setScrollDirection] = useState(1); // 1 for forward, -1 for backward
 
   useEffect(() => {
     const handleAnimationEnd = () => {
@@ -29,6 +30,31 @@ function Home() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    const pCards = pCardsRef.current;
+
+    const scroll = () => {
+      if (pCards) {
+        pCards.scrollLeft += scrollDirection; // Scroll in the current direction
+
+        // Check if the scroll has reached the end (right side)
+        if (pCards.scrollLeft >= pCards.scrollWidth - pCards.clientWidth) {
+          setScrollDirection(-1); // Change direction to backward
+        }
+        // Check if the scroll has reached the start (left side)
+        else if (pCards.scrollLeft <= 0) {
+          setScrollDirection(1); // Change direction to forward
+        }
+      }
+    };
+
+    // Set the interval to automatically scroll every 10ms
+    const intervalId = setInterval(scroll, 20); // Adjust speed here by changing the delay
+
+    // Cleanup on component unmount
+    return () => clearInterval(intervalId);
+  }, [scrollDirection]);
 
   return (
     <>
@@ -74,41 +100,29 @@ function Home() {
           <p id="proj" className="Head">
             Top Projects
           </p>
-          <div className="p_cards">
+          <div className="p_cards" ref={pCardsRef}>
             <div className="cardp">
               <div className="pcardo"></div>
-              <a href="https://turnerscleaningservice.com/">
-                Turner's Cleaning
-              </a>
+              <a href="https://turnerscleaningservice.com/">Turner's Cleaning</a>
             </div>
             <div className="cardp">
               <div className="pcardoo"></div>
-
-              <a href="https://jsuinnovation.netlify.app/">
-                Innovation Site
-              </a>
+              <a href="https://jsuinnovation.netlify.app/">Innovation Site</a>
             </div>
             <div className="cardp">
               <div className="pcardt"></div>
-              <a href="https://github.com/AATechCulture/TiCode">
-                BE SMART Hackathon
-              </a>
+              <a href="https://github.com/AATechCulture/TiCode">BE SMART Hackathon</a>
             </div>
             <div className="cardp">
               <div className="pcardth"></div>
-
-              <a href="https://devpost.com/software/mediscan-b6ln1m">
-                Lily hackathon
-              </a>
+              <a href="https://devpost.com/software/mediscan-b6ln1m">Lily hackathon</a>
             </div>
             <div className="cardp">
               <div className="pcardf"></div>
-
               <a href="https://www.linkedin.com/pulse/meet-youth-tackling-challenges-south-african-education-usaid/">
                 USAID Case study
               </a>
             </div>
-
           </div>
         </div>
       </div>
