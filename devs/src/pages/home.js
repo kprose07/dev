@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "../css/home.css";
 import "../css/variables.css";
 import Me from "../imgs/me.png";
@@ -9,7 +9,6 @@ function Home() {
   const sectionTwoRef = useRef(null);
   const introducingTextRef = useRef(null);
   const pCardsRef = useRef(null);
-  const [scrollDirection, setScrollDirection] = useState(1); // 1 for forward, -1 for backward
 
   useEffect(() => {
     const handleAnimationEnd = () => {
@@ -34,27 +33,31 @@ function Home() {
   useEffect(() => {
     const pCards = pCardsRef.current;
 
+    // Duplicate child elements to create the illusion of infinite scrolling
+    const cloneCards = () => {
+      const clonedCards = pCards.innerHTML;
+      pCards.innerHTML += clonedCards;
+    };
+
+    cloneCards(); // Clone the cards when component mounts
+
     const scroll = () => {
       if (pCards) {
-        pCards.scrollLeft += scrollDirection; // Scroll in the current direction
+        pCards.scrollLeft += 1; // Scroll to the left
 
-        // Check if the scroll has reached the end (right side)
-        if (pCards.scrollLeft >= pCards.scrollWidth - pCards.clientWidth) {
-          setScrollDirection(-1); // Change direction to backward
-        }
-        // Check if the scroll has reached the start (left side)
-        else if (pCards.scrollLeft <= 0) {
-          setScrollDirection(1); // Change direction to forward
+        // Check if the scroll has reached the middle point (after the original cards)
+        if (pCards.scrollLeft >= pCards.scrollWidth / 2) {
+          pCards.scrollLeft = 0; // Reset scroll to the start of the original cards
         }
       }
     };
 
-    // Set the interval to automatically scroll every 10ms
-    const intervalId = setInterval(scroll, 20); // Adjust speed here by changing the delay
+    // Set interval to scroll every 20ms
+    const intervalId = setInterval(scroll, 10);
 
     // Cleanup on component unmount
     return () => clearInterval(intervalId);
-  }, [scrollDirection]);
+  }, []);
 
   return (
     <>
