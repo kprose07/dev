@@ -212,7 +212,6 @@ p {
     flex-direction: column;
     /* align-items: flex-start; */
 }
-
 .section_five {
     width: 100%;
     height: 600px;
@@ -221,7 +220,6 @@ p {
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.73);
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -237,28 +235,26 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 60px;
-    max-width: 100%; /* Ensure the container width is 100% of its parent */
-    width: max-content; /* Make sure the width is determined by its content */
-    height: auto; /* Allow height to be determined by content */
-    align-content: center;
-    justify-content: flex-start; /* Align content to the start */
+    max-width: 100%;
+    width: max-content;
     padding: 30px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-  }
+    overflow-x: hidden; /* Hides the scrollbar */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
 /* Custom scrollbar for WebKit browsers */
 .p_cards::-webkit-scrollbar {
-    height: 15px; /* Adjust the height of the horizontal scrollbar */
-  }
-  
-  .p_cards::-webkit-scrollbar-thumb {
-    background-color: var(--lgreen); /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Round the scrollbar thumb */
-  }
-  
-  .p_cards::-webkit-scrollbar-track {
-    background-color: transparent; /* Background of the scrollbar track */
-  }  
+    height: 15px;
+}
+
+.p_cards::-webkit-scrollbar-thumb {
+    background-color: var(--lgreen);
+    border-radius: 10px;
+}
+
+.p_cards::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 
 .cardp {
     display: flex;
@@ -274,53 +270,40 @@ p {
     padding: 10px;
     font-style: italic;
     text-decoration: underline !important;
-    /* font-weight: 700; */
     text-align: center;
 }
 
-.pcardo {
-    width: 300px;
-    height: 180px;
-    background-color: white;
-    background-image: url("../imgs/turner.png");
-    background-size: cover;
-    background-position: center;
-    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
-    border-radius: 20px;
-}
-
-.pcardt {
-    width: 300px;
-    height: 180px;
-    background-color: white;
-    background-image: url("../imgs/soarp.png");
-    background-size: cover;
-    background-position: center;
-
-    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
-    border-radius: 20px;
-}
-
-.pcardth {
-    width: 300px;
-    height: 180px;
-    background-color: white;
-    background-position: center;
-
-    background-image: url("../imgs/lily.png");
-    background-size: cover;
-    filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
-    border-radius: 20px;
-}
-
+.pcardo,
+.pcardoo,
+.pcardt,
+.pcardth,
 .pcardf {
     width: 300px;
     height: 180px;
     background-color: white;
-    background-position: center;
-
-    background-image: url("../imgs/imfundo.png");
     background-size: cover;
+    background-position: center;
     filter: drop-shadow(0 0 0.75rem rgb(31, 30, 30));
     border-radius: 20px;
+}
+
+/* Add the specific background images */
+.pcardo {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_0Ba2V3u4ObTiUKW6atuTkc91iLBDTCr8XeYkVzYXl2o4Z3SFF7iGmIwv44txY_JzLraqRfVIQFVwDoSINoY_eJfWd7jmwMpNwgHBzPEd5gX0TUAdLmN8I5rcPrhQNWeJLikyYv2H9BMHNJEniRt47w=w1881-h860-s-no-gm?authuser=0");
+}
+
+.pcardoo {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczPYC2Xj1bQH5-FcQoUcc4gjkPO7LewGVb6IkkJsb-2xUVHi8qrjLc8vn-c4xj7eojctFPV5yCVTio1hTZNnUPAWkSIBL8EXqMH8v4nDmgY9-69K9sigpG5SFfZTSG1FQXBVGy7bMHxYS4Dq3sNyuUzBWA=w1862-h941-s-no-gm?authuser=0");
+}
+
+.pcardt {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczPW78EU5nf5SBvZ2SJKBNiCBJE5NvzP8pAd20i97JCty76C8w5b2Urld-uJt9bjSET9JHjMNx3xctfMuUDrVPYfEGUludndLYKqlcXM3aySJ2ug_U5o00d8vQ19JR-tR-eMkpi5fn_-HKynMutiwOhgRw=w648-h358-s-no-gm?authuser=0");
+}
+
+.pcardth {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOEfq-zM32o5_--cKnqhnJC7Z_Qp_TD5JnkTd7Dc3X6xAf6G4Ni9P20qNY2ei9bfZWrSuQW2xWj_ZqG5YJ4qCXJ57c8fYEdQcSrSZF3uJu6Y6tXVdvIj1ry2jq9hN8vktuOfQ-iQskn7WIx0oIsszJ5Jg=w373-h205-s-no-gm?authuser=0");
+}
+
+.pcardf {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczM06lxzHqrWit0ir1PBEiTv52iuEXe_t2MXOwsXtoRYqiHOYosjcthHRExkv2MQBabSx6cT0aAu4IAySMlFbC7OPHgMFmxzvIJHd66dG375k6VEffD_X3QRK9OiGkpgGQVbjPLX7Pg6_pVm0f4GK3vZ5A=w546-h291-s-no-gm?authuser=0");
 }
