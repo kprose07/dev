@@ -51,7 +51,7 @@ function Home() {
               community. Let's build the future together!
             </p>
             <a id="resume" href="/resume.pdf" download>
-              Resume
+              Khaylah.P.Rose.Resume
             </a>
           </div>
           <div className="stct">
