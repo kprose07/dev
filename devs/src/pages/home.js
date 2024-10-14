@@ -102,8 +102,8 @@ function Home() {
               skills in computer engineering to drive positive change within our
               community. Let's build the future together!
             </p>
-            <a id="resume" href="/resume.pdf" download>
-              Khaylah.P.Rose.Resume
+            <a id="resume" href="/Khaylah.P.Rose.pdf" download>
+              Resume
             </a>
           </div>
           <div className="stct">
@@ -135,7 +135,9 @@ function Home() {
           <div className="p_cards" ref={pCardsRef}>
             <div className="cardp">
               <div className="pcardo"></div>
-              <a href="https://turnerscleaningservice.com/">Turner's Cleaning</a>
+              <a href="https://turnerscleaningservice.com/">
+                Turner's Cleaning
+              </a>
             </div>
             <div className="cardp">
               <div className="pcardoo"></div>
@@ -143,11 +145,15 @@ function Home() {
             </div>
             <div className="cardp">
               <div className="pcardt"></div>
-              <a href="https://github.com/AATechCulture/TiCode">BE SMART Hackathon</a>
+              <a href="https://github.com/AATechCulture/TiCode">
+                BE SMART Hackathon
+              </a>
             </div>
             <div className="cardp">
               <div className="pcardth"></div>
-              <a href="https://devpost.com/software/mediscan-b6ln1m">Lily hackathon</a>
+              <a href="https://devpost.com/software/mediscan-b6ln1m">
+                Lily hackathon
+              </a>
             </div>
             <div className="cardp">
               <div className="pcardf"></div>
