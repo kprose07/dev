@@ -141,7 +141,7 @@ function Home() {
             </div>
             <div className="cardp">
               <div className="pcardoo"></div>
-              <a href="https://jsuinnovation.netlify.app/">Innovation Site</a>
+              <a href="https://jsuinnovate.netlify.app/">Innovation Site</a>
             </div>
             <div className="cardp">
               <div className="pcardt"></div>
