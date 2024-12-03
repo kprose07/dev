@@ -102,7 +102,7 @@ function Home() {
               skills in computer engineering to drive positive change within our
               community. Let's build the future together!
             </p>
-            <a id="resume" href="/Khaylah.P.Rose.pdf" download>
+            <a id="resume" href="/Khaylah.P.Rose.Resume.pdf" download>
               Resume
             </a>
           </div>
