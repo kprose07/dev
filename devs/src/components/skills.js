@@ -30,7 +30,7 @@ function Skills() {
     "VSCode",
     "Unity",
     "Android Studio",
-   "Power Automate",
+    "Power Automate",
     "Power App",
     "JSON",
   ];
