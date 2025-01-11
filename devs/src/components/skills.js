@@ -21,9 +21,6 @@ function Skills() {
   ];
 
   const Bskils = [
-    "Power Automate",
-    "Power App",
-    "JSON",
     "Figma",
     "GitHub",
     "Rest API",
@@ -33,6 +30,9 @@ function Skills() {
     "VSCode",
     "Unity",
     "Android Studio",
+   "Power Automate",
+    "Power App",
+    "JSON",
   ];
 
   const skillRefs = useRef([]);
