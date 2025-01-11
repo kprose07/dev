@@ -3,29 +3,34 @@ import "../css/skills.css";
 
 function Skills() {
   const Fskils = [
-    "React",
+    "React JS",
+    "React Native Expo",
     "HTML",
     "CSS",
     "TypeScript",
     "JavaScript",
     "Angular",
+    "Python",
     "Flask",
-    "Figma",
-    "UI/UX",
-    "WebDesign",
+    "MySQL",
+    "C",
+    "C++",
+    "C#",
+    "Java",
+    "Kotlin",
   ];
 
   const Bskils = [
-    "C++",
-    "Kotlin",
-    "Python",
-    "NodeJS",
+    "Power Automate",
+    "Power App",
+    "JSON",
+    "Figma",
     "GitHub",
-    "C",
+    "Rest API",
     "Linux",
     "AWS",
     "FireBase",
-    "SQL",
+    "VSCode",
     "Unity",
     "Android Studio",
   ];
@@ -62,7 +67,7 @@ function Skills() {
     <div>
       <div className="skills_cont">
         <div className="skills_sect">
-          <p className="head_skills">Front End</p>
+          <p className="head_skills">Programming Languages</p>
           <div className="skills_tags_cont">
             {Fskils.map((skill, index) => (
               <p
@@ -77,7 +82,7 @@ function Skills() {
         </div>
 
         <div className="skills_sect">
-          <p className="head_skills">Back End</p>
+          <p className="head_skills">Software Tools</p>
           <div className="skills_tags_cont">
             {Bskils.map((skill, index) => (
               <p
