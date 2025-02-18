@@ -103,7 +103,7 @@ function Home() {
               community. Let's build the future together!
             </p>
             <div className="links">
-              <a id="resume" href="/resume.pdf" download>
+              <a id="resume" href="/KPR2025.pdf" download>
                 Resume
               </a>
               <a id="git" href="https://github.com/kprose07">
