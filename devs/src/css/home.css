@@ -5,7 +5,7 @@
     flex-direction: column;
     background-color: white;
     -webkit-user-select: none;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /* Section One */
@@ -24,23 +24,26 @@ overflow-x: hidden;
 
 @keyframes fadeInSlideUp {
     from {
-      opacity: 0;
-      transform: translateY(50px);
+        opacity: 0;
+        transform: translateY(50px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  #so_text {
+}
+
+#so_text {
     color: var(--wg);
     font-size: 64px;
     text-align: center;
     width: max-content;
-    opacity: 0; /* Start hidden */
-    animation: fadeInSlideUp 4s ease-out forwards; /* Apply new animation */
-  }
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeInSlideUp 4s ease-out forwards;
+    /* Apply new animation */
+}
 
 /* CSS for typing animation */
 @keyframes typing {
@@ -132,6 +135,14 @@ p {
     margin-top: 10px;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    flex-wrap: wrap;
+
+}
+
 #resume {
     width: 100px;
     height: 50px;
@@ -146,13 +157,29 @@ p {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-  }
-  
-  #resume:hover {
-    background-color:white;
+}
+
+#git {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    outline: 0;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#resume:hover {
+    background-color: white;
     border: 3px solid var(--blue);
     color: var(--blue);
-  }
+}
 
 .stct {
     display: flex;
@@ -237,28 +264,39 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 60px;
-    max-width: 100%; /* Ensure the container width is 100% of its parent */
-    width: max-content; /* Make sure the width is determined by its content */
-    height: auto; /* Allow height to be determined by content */
+    max-width: 100%;
+    /* Ensure the container width is 100% of its parent */
+    width: max-content;
+    /* Make sure the width is determined by its content */
+    height: auto;
+    /* Allow height to be determined by content */
     align-content: center;
-    justify-content: flex-start; /* Align content to the start */
+    justify-content: flex-start;
+    /* Align content to the start */
     padding: 30px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-  }
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    /* Disable vertical scrolling */
+}
+
 /* Custom scrollbar for WebKit browsers */
 .p_cards::-webkit-scrollbar {
-    height: 15px; /* Adjust the height of the horizontal scrollbar */
-  }
-  
-  .p_cards::-webkit-scrollbar-thumb {
-    background-color: var(--lgreen); /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Round the scrollbar thumb */
-  }
-  
-  .p_cards::-webkit-scrollbar-track {
-    background-color: transparent; /* Background of the scrollbar track */
-  }  
+    height: 15px;
+    /* Adjust the height of the horizontal scrollbar */
+}
+
+.p_cards::-webkit-scrollbar-thumb {
+    background-color: var(--lgreen);
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Round the scrollbar thumb */
+}
+
+.p_cards::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Background of the scrollbar track */
+}
 
 .cardp {
     display: flex;
