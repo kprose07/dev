@@ -314,6 +314,7 @@ p {
     text-align: center;
 }
 
+.pcardz,
 .pcardo,
 .pcardoo,
 .pcardt,
@@ -329,7 +330,7 @@ p {
 }
 
 /* Add the specific background images */
-.pcardo {
+.pcardz {
     background-image: url("../imgs/chrome.png");
 }
 
