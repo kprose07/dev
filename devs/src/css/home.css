@@ -330,6 +330,10 @@ p {
 
 /* Add the specific background images */
 .pcardo {
+    background-image: url("../imgs/chrome.png");
+}
+
+.pcardo {
     background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_0Ba2V3u4ObTiUKW6atuTkc91iLBDTCr8XeYkVzYXl2o4Z3SFF7iGmIwv44txY_JzLraqRfVIQFVwDoSINoY_eJfWd7jmwMpNwgHBzPEd5gX0TUAdLmN8I5rcPrhQNWeJLikyYv2H9BMHNJEniRt47w=w1881-h860-s-no-gm?authuser=0");
 }
 

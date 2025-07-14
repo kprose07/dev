@@ -93,17 +93,14 @@ function Home() {
         <div className="section_two fade-in" ref={sectionTwoRef}>
           <div className="stco">
             <p className="so_HeadText">Khaylah Rose</p>
-            <p className="so_SubText">Fullstack Developer</p>
+            <p className="so_SubText">Computer Engineer</p>
             <p className="so_Detail">
-              Greetings! I'm Khaylah Rose, an aspiring computer engineer
-              currently in my senior year, Class of 2025. With a passion for
-              both front-end and back-end development, I strive to create
-              seamless and impactful user experiences. My goal is to leverage my
-              skills in computer engineering to drive positive change within our
-              community. Let's build the future together!
+Greetings! I'm Khaylah Rose, a recent Computer Engineering graduate, Class of 2025. With a passion for both front-end and back-end development, I strive to create seamless and impactful user experiences. My goal is to leverage my skills in computer engineering to drive positive change within our community. Let’s build the future together!
+
+
             </p>
             <div className="links">
-              <a id="resume" href="/KhaylahPRoseSEResume.pdf" download>
+              <a id="resume" href="/Khaylah_Rose_CE_Resume.pdf" download>
                 Resume
               </a>
               <a id="git" href="https://github.com/kprose07">
@@ -138,6 +135,12 @@ function Home() {
             Top Projects
           </p>
           <div className="p_cards" ref={pCardsRef}>
+             <div className="cardp">
+              <div className="pcardz"></div>
+              <a href="https://drive.google.com/drive/u/0/folders/1RQebbJF-5fGYGFOVrk0bbg8srFS2ZjMQ">
+                CHROME
+              </a>
+            </div>
             <div className="cardp">
               <div className="pcardo"></div>
               <a href="https://turnerscleaningservice.com/">
