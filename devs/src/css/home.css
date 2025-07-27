@@ -180,7 +180,11 @@ p {
     border: 3px solid var(--blue);
     color: var(--blue);
 }
-
+#git:hover {
+    background-color: white;
+    border: 3px solid var(--blue);
+    color: var(--blue);
+}
 .stct {
     display: flex;
     justify-content: baseline;

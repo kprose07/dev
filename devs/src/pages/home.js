@@ -100,7 +100,7 @@ Greetings! I'm Khaylah Rose, a recent Computer Engineering graduate, Class of 20
 
             </p>
             <div className="links">
-              <a id="resume" href="/Khaylah_Rose_CE_Resume.pdf" download>
+              <a id="resume" href="/KhaylahRoseCE.pdf" download>
                 Resume
               </a>
               <a id="git" href="https://github.com/kprose07">
@@ -153,7 +153,7 @@ Greetings! I'm Khaylah Rose, a recent Computer Engineering graduate, Class of 20
             </div>
             <div className="cardp">
               <div className="pcardt"></div>
-              <a href="https://github.com/AATechCulture/TiCode">
+              <a href="https://southernlaced.com/2023/11/09/jsu-ticode-team-with-soar-app-at-be-smart-hackathon/">
                 BE SMART Hackathon
               </a>
             </div>
